@@ -4,6 +4,8 @@ const sumAll = function(numOne, numTwo) {
         return "ERROR";
     } else if (isNaN(numTwo)) {
         return "ERROR";
+    } else if (Math.sign(numOne) == -1 || Math.sign(numTwo) == -1) {
+        return "ERROR";
     } else {
         if (numOne > numTwo) {
             while (numOne >= numTwo) {
