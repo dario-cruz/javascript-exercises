@@ -1,8 +1,8 @@
 const sumAll = function(numOne, numTwo) {
     const numsArray =[];
-    if (isNaN(numOne)) {
+    if (isNaN(numOne) || typeof numOne === `string`) {
         return "ERROR";
-    } else if (isNaN(numTwo)) {
+    } else if (isNaN(numTwo) || typeof numTwo === `string`) {
         return "ERROR";
     } else if (Math.sign(numOne) == -1 || Math.sign(numTwo) == -1) {
         return "ERROR";
