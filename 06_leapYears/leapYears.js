@@ -1,4 +1,9 @@
-const leapYears = function() {
+const leapYears = function(inputYears) {
+    if (inputYears % 4 == 0 && inputYears % 100 !== 0) {
+        return true;
+    } else {
+        return false;
+    }
 
 };
 
