@@ -22,8 +22,8 @@ const sum = function(numArray) {
   // return total;
 };
 
-const multiply = function() {
-
+const multiply = function(multiNums) {
+  return multiNums.reduce((accum, current) => accum*current,1);
 };
 
 const power = function() {
