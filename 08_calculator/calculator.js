@@ -26,8 +26,8 @@ const multiply = function(multiNums) {
   return multiNums.reduce((accum, current) => accum*current,1);
 };
 
-const power = function() {
-	
+const power = function(numOne, numTwo) {
+  return numOne ** numTwo;
 };
 
 const factorial = function() {
