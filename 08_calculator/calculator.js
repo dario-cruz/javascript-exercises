@@ -30,8 +30,15 @@ const power = function(numOne, numTwo) {
   return numOne ** numTwo;
 };
 
-const factorial = function() {
-	
+const factorial = function(numArg) {
+  let result = numArg
+	if (numArg == 1 || numArg == 0)
+    return 1;
+  while (numArg > 1) {
+    numArg--;
+    result *= numArg;    
+  }
+  return result;
 };
 
 // Do not edit below this line
