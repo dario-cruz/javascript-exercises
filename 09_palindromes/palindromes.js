@@ -1,7 +1,10 @@
 const palindromes = function (string) {
     let firstPass = string.replace('!','').toLocaleLowerCase();
-    let secondPass = firstPass.replace(',','').replace('.','').replace(' ','');
+    console.log(firstPass);
+    let secondPass = firstPass.replaceAll(',','').replaceAll('.','').replaceAll(' ','');
+    console.log(secondPass);
     let modString = secondPass.split("").reverse().join("");
+    console.log(modString);
     if (modString === secondPass) {
         return true;
     } else {
