@@ -1,5 +1,5 @@
-const findTheOldest = function(array) {
-    let ageArray = array.map((element) => {
+const findTheOldest = function(people) {
+    let ageArray = people.map((element) => {
         // Map method itierates through the array with the given function.
         // Function gets the age of the person and puts it into a resulting array.
         return element.yearOfDeath - element.yearOfBirth;
@@ -9,7 +9,7 @@ const findTheOldest = function(array) {
     // Defining the value to be used for selection.
     let selectIndex = ageArray.getIndex;
     // return the selection.
-    return array[selectIndex];
+    return people[selectIndex];
 };
 
 // Do not edit below this line
