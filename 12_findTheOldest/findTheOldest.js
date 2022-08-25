@@ -5,9 +5,14 @@ const getDate = today.getFullYear();
 
 const findTheOldest = function(people) {
     const ageArray = people.map((element) => {
+        // if statment to check if element containes yOfDeath.
+        if (isNaN(element.yearOfDeath)) {
+            return getDate - element.yearOfBirth;
+        } else {
+            return element.yearOfDeath - element.yearOfBirth;
+        }
         // Map method itierates through the array with the given function.
         // Function gets the age of the person and puts it into a resulting array.
-        return element.yearOfDeath - element.yearOfBirth;
     })
     console.log(ageArray);
     // Making use of the Math.max method to find the index of the max age. 
